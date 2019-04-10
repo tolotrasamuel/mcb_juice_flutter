@@ -46,6 +46,12 @@ flutter:
   - assets/img_guest_profile.png
   - assets/img_qrscan.png
   - assets/img_savings_icon.png
+  - assets/img_tab_accounts.png
+  - assets/img_tab_cards.png
+  - assets/img_tab_paytransfer.png
+  - assets/img_tab_refill.png
+  - assets/img_tab_more.png
+  - assets/transfermenu_refill.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
