@@ -13,7 +13,7 @@ class MyMcbApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: new Scaffold(
-          appBar: new AppBar(
+          appBar: AppBar(
             elevation: 0.0,
             backgroundColor: Color(0xffd50133),
             title: Text(
@@ -204,59 +204,60 @@ class MyMcbApp extends StatelessWidget {
                 height: 15.0,
               ),
               Container(
-                child: ListView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: 3,
-                    itemBuilder: (context, index) {
-                      return Column(
-                        children: <Widget>[
-                          Container(
-                            height: 88,
-                            color: Colors.white,
-                            child: Row(
-                              children: <Widget>[
-                                Container(
-                                  padding: EdgeInsets.all(24.0),
-                                  child: Image.asset(
-                                      'assets/img_savings_icon.png'),
+                child:
+                ListView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: 3,
+                  itemBuilder: (context, index) {
+                    return Column(
+                      children: <Widget>[
+                        Container(
+                          height: 88,
+                          color: Colors.white,
+                          child: Row(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.all(24.0),
+                                child:
+                                    Image.asset('assets/img_savings_icon.png'),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Text(
+                                      'Saving Account - SG',
+                                      style: TextStyle(
+                                          fontSize: 16.0, color: Colors.grey),
+                                    ),
+                                    Text(
+                                      'MUR 1,000,000.04',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16.0),
+                                    ),
+                                    Text(
+                                      '0004441234123',
+                                      style: TextStyle(
+                                          color: Colors.grey, fontSize: 13.0),
+                                    ),
+                                  ],
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.all(12.0),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
-                                    children: <Widget>[
-                                      Text(
-                                        'Saving Account - SG',
-                                        style: TextStyle(
-                                            fontSize: 16.0, color: Colors.grey),
-                                      ),
-                                      Text(
-                                        'MUR 1,000,000.04',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 16.0),
-                                      ),
-                                      Text(
-                                        '0004441234123',
-                                        style: TextStyle(
-                                            color: Colors.grey, fontSize: 13.0),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
-                          Divider(
-                            height: 1,
-                          ),
-                        ],
-                      );
-                    }),
+                        ),
+                        Divider(
+                          height: 1,
+                        ),
+                      ],
+                    );
+                  },
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 12.0, bottom: 15.0),

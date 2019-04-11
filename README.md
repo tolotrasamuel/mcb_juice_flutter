@@ -1,6 +1,9 @@
 # mcb_app
 
-A mcb app for learning purpose
+A MCB (Mauritius Commericial Bank) Juice app  rebuilt with Flutter for learning purpose
+
+![Alt text](screenshoots/1.png?raw=true "Juice Flutter")
+
 
 ## Getting Started
 
